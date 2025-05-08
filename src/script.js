@@ -23,19 +23,19 @@ export function initSearch(people) { // rör ej denna rad
     
     // 2. Skapa en boolean för found
     let found = false;
-    let curName;
+
     // 3. Loopa igenom people-arrayen
-    for ( curName of people){
+    for ( let person of people){
 
       // 4. Jämför texten med varje namn i arrayen
-      if ( curName === inputName ){
+      if ( person === inputName ){
         // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
         resultDisplay.innerText = "Namn hittades!";
         found = true;
       }
     }
 
-    if (found === false){
+    if (!found){
       // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
       resultDisplay.innerText = "Namn hittades inte.";
       found = false;
