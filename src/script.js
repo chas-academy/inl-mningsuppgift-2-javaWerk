@@ -17,11 +17,9 @@ export function initSearch(people) { // rör ej denna rad
   
   // Lägg till en klickhändelse på "Sök"-knappen
   searchBtn.addEventListener("click",() => {
-    // 1. Hämta texten i searchInput.value
 
-    //htmlOutput.innerHTML = searchInput.value;
+    // 1. Hämta texten i searchInput.value
     let inputName = searchInput.value;
-    console.log(searchInput.value);
     
     // 2. Skapa en boolean för found
     let found = false;
@@ -32,15 +30,13 @@ export function initSearch(people) { // rör ej denna rad
 
       // 4. Jämför texten med varje namn i arrayen
       if ( curName === inputName ){
+        // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
+        resultDisplay.innerText = "Namn hittades!";
         found = true;
       }
     }
-    console.log(found);
 
-    if (found === true){
-      // 5. Om du hittar en match, skriv ut "Namn hittades!" i resultDisplay, ändra found till true
-      resultDisplay.innerText = "Namn hittades!";
-    } else {
+    if (found != true){
       // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
       resultDisplay.innerText = "Namn hittades inte.";
       found = false;
