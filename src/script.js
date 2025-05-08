@@ -23,8 +23,7 @@ export function initSearch(people) { // rör ej denna rad
     
     // 2. Skapa en boolean för found
     let found = false;
-    let curName = "";
-
+    let curName;
     // 3. Loopa igenom people-arrayen
     for ( curName of people){
 
@@ -36,7 +35,7 @@ export function initSearch(people) { // rör ej denna rad
       }
     }
 
-    if (found != true){
+    if (found === false){
       // 6. Om du efter loopen inte hittat något, skriv ut "Namn hittades inte." och gör found till false igen.
       resultDisplay.innerText = "Namn hittades inte.";
       found = false;
