@@ -45,7 +45,6 @@ export function initSearch(people) { // rör ej denna rad
 }
 
 
-
 // rör ej dessa rader
 document.addEventListener("DOMContentLoaded", () => {
   initSearch(people);
