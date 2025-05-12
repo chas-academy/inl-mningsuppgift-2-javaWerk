@@ -7,6 +7,7 @@ let people = [
   "Patrik", "Josefin", "Mattias", "Lovisa", "Viktor", "Amanda", "Simon", "Julia", "Peter", "Agnes"
 ];
 
+
 export function initSearch(people) { // rör ej denna rad
 
   // Hämta HTML-element
