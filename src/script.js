@@ -37,7 +37,6 @@ export function initSearch(people) { // rör ej denna rad
         }
       }})
     
-        
     
 }
 
